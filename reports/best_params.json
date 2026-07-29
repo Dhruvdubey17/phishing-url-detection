@@ -1,0 +1,47 @@
+{
+  "random_forest": {
+    "best_params": {
+      "max_depth": null,
+      "max_features": 0.4,
+      "min_samples_leaf": 2,
+      "min_samples_split": 4,
+      "n_estimators": 364
+    },
+    "fit_seconds": 340.5,
+    "validation": {
+      "accuracy": 0.8981791567788152,
+      "precision": 0.9043069735702475,
+      "recall": 0.8615688529919232,
+      "f1": 0.8824207345182605,
+      "roc_auc": 0.9688853906688554
+    },
+    "artifact": "models/random_forest.joblib"
+  },
+  "xgboost": {
+    "best_params": {
+      "colsample_bytree": 0.7123738038749523,
+      "gamma": 0.2170784332632994,
+      "learning_rate": 0.04321677691743424,
+      "max_depth": 12,
+      "min_child_weight": 1,
+      "n_estimators": 544,
+      "subsample": 0.9947547746402069
+    },
+    "fit_seconds": 26.1,
+    "validation": {
+      "accuracy": 0.9030473064383774,
+      "precision": 0.9200677528633651,
+      "recall": 0.8557175364457003,
+      "f1": 0.886726695601477,
+      "roc_auc": 0.9723507234402414
+    },
+    "artifact": "models/xgboost.joblib"
+  },
+  "_meta": {
+    "n_train": 811595,
+    "n_val": 90178,
+    "n_test": 100000,
+    "n_features": 47,
+    "random_state": 42
+  }
+}
