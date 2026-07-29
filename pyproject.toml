@@ -1,0 +1,13 @@
+[project]
+name = "phishing-url-detection"
+version = "1.0.0"
+description = "Phishing URL detection from lexical, structural and heuristic features of the URL string"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "artifacts: requires trained models in models/ (run `python -m src.train` first)",
+]
+filterwarnings = ["ignore::DeprecationWarning"]
